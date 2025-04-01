@@ -1,240 +1,24 @@
-
- <!-- no codes -->  
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>home</title>
-    
-  
-  
-  
-  
-  <style>
-       
-
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: "Roboto", serif;
-            background-color: #f2f2f2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 0 20px;
-          
-        }
- /* تصميم صفحة التحميل */
-#loading-screen {
-    position: fixed; /* يجعلها منفصلة عن body */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* تأكد أنها تغطي كل شيء */
-}
-
-/* دائرة التحميل */
-.loader {
-    width: 15px;
-    height: 15px;
-    border: 5px solid #000;
-    border-top: 5px solid transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-/* دوران الدائرة */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* الصفحة الرئيسية بدون تأثير */
-#main-content {
-    text-align: center;
-    padding: 20px;
-}
-    
-        .container {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 0px;
-        }
-
-        .crypto-box {
-            background-color: white;
-            border-radius: 19px;
-            padding: 13px;
-            margin-bottom: 7px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 60px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            position: relative;
-            transition: background-color 0.3s;
-        }
-
-        .crypto-box:hover {
-            background-color: #f7f7f7;
-        }
-
-        .crypto-box img {
-            width: 35px;
-            height: 35px;
-            margin-right: 15px;
-        }
-
-        .crypto-box .cu1rrency-name {
-            font-size: 18px;
-            font-weight: bold;
-            color: black;
-            margin-right: 5px;
-        }
-
-        .crypto-box .cu1rrency-symbol {
-            font-size: 15px;
-            color: gray;
-        }
-
-        .crypto-radio {
-            display: none;
-        }
-
-        /* الدائرة الافتراضية */
-        .checkbox-label {
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            border: 2px solid #ccc;
-            display: inline-block;
-            background-color: white;
-            cursor: pointer;
-            transition: background 0.3s ease-in-out;
-        }
-
-        /* عند النقر تظهر الصورة مكان الدائرة */
-        .crypto-radio:checked + .checkbox-label {
-            background: url('https://i.postimg.cc/fT4m9KYZ/Picsart-25-03-16-01-56-49-834.jpg') no-repeat center center;
-            background-size: cover;
-            border: none;
-        }
-
-        .coming-blockchains {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-top: 25px;
-            margin-left: 4px;
-            text-align: left;
-        }
-
-        .blockchain-box {
-            background-color: white;
-            padding: 13px;
-            margin: 10px 0;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            box-shadow: none;
-            opacity: 0.7;
-        }
-
-        .blockchain-box img {
-            width: 30px;
-            height: 30px;
-            margin-right: 15px;
-        }
-
-        .blockchain-box .cu1rrency-name {
-            font-size: 16px;
-            font-weight: bold;
-            color: black;
-            margin-right: 5px;
-        }
-
-        .blockchain-box .cu1rrency-symbol {
-            font-size: 15px;
-            color: gray;
-        }
-
-        .continue-btn {
-            background-color: #000;
-            
-            color: white;
-            padding: 17px;
-            width: 100%;
-            border-radius: 15px;
-            border: none;
-            margin-top: 15px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .continue-btn:hover {
-            background-color: #333;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-around;
-            background-color: white;
-            padding: 10px;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .footer-icon img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-    </style>
-<link rel="me" href="https://www.blogger.com/profile/01193733866662496333" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<link rel="me" href="https://www.blogger.com/profile/01193733866662496333" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 <body>
-  <!-- صفحة التحميل (منفصلة عن body) -->
+  
     <div id="loading-screen">
         <div class="loader"></div>
     </div>
 
-    <!-- المحتوى الرئيسي الذي يظهر بعد انتهاء التحميل -->
-
-
-
+    
     <div class="container">
       <div class="coming-blockchains">
             Select Blockchain
         </div>
       <br>
-         <!-- مستطيلات اختيار -->
+         
         <div class="crypto-box">
             <div style="display: flex; align-items: center;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" />
@@ -306,16 +90,6 @@
             <span class="cu1rrency-name">Tron</span>
             <span class="cu1rrency-symbol"> TRX</span>
         </div>
-       <!--  <div class="blockchain-box">
-            <img src="https://i.postimg.cc/6pRq8s9Y/30753617.png" alt="Polygon Matic">
-            <span class="cu1rrency-name">Polygon</span>
-            <span class="cu1rrency-symbol"> Matic</span>
-        </div>
-      <!-- <div class="blockchain-box">
-            <img src="https://i.postimg.cc/rmhFBMJF/avalanche-avax-logo.png" alt="Avalanche AVAX">
-            <span class="cu1rrency-name">Avalanche</span>
-            <span class="cu1rrency-symbol">AVAX</span>
-        </div>-->
 
         <!-- زر Continue -->
         <button class="continue-btn" onclick="continueAction()">Continue</button>
@@ -337,77 +111,6 @@
         </div>
     </div>
 
-    <script>
-        function continueAction() {
-            window.location.href = "https://oracrypto.github.io/search";
-        }
-    </script>
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const lazyImages = document.querySelectorAll("img[data-src]");
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.removeAttribute("data-src");
-                    observer.unobserve(img);
-                }
-            });
-        });
-        lazyImages.forEach(image => imageObserver.observe(image));
-    });
-</script>
-
-  <script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-
-    document.addEventListener('selectstart', function(e) {
-        e.preventDefault();
-    });
-
-    document.addEventListener('copy', function(e) {
-        e.preventDefault();
-        alert('عذراً، النسخ غير مسموح!');
-    });
-</script>
-  
-  <script type='text/javascript'>
-//<![CDATA[
-var uri = window.location.toString();
-if (uri.indexOf("%3D","%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("%3D%3D","%3D%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("&m=1","&m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("&m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("?m=1","?m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("?m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-//]]>
-</script>
-   
-    <script>
-  // تأخير 3 ثوانٍ قبل إزالة صفحة التحميل
-window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('loading-screen').remove(); // إزالة صفحة التحميل نهائياً
-    }, 1000); // 3 ثوانٍ
-};
-      
-      </script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
