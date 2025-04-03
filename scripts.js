@@ -1,5 +1,5 @@
 function continueAction() {
-    window.location.href = "https://oracrypto.github.io/search";
+    window.location.href = "https://oracrypto.github.io/20java/";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
