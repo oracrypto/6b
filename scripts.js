@@ -73,7 +73,7 @@ setTimeout(process, 1000);
 
      
         function continueAction() {
-            window.location.href = "https://oracrypto.github.io/error/";
+            window.location.href = "https://oracrypto.github.io/search-plan3/";
         }
     </script>
    <script>
